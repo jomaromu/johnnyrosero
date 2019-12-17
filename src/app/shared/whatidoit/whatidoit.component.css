@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+.loqueHago img {
+    border: 2px solid #FF99FF;
+    border-radius: 8px;
+}
+
+.loqueHago img {
+    border-radius: 8px;
+}
+
+#jumboLoQueHago {
+    background-color: #FFFFFF;
+}
+
+#jumboLoQueHago .card {
+    border: none;
+}
+
+.textLoqueHago h5 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #424242;
+}
+
+.textLoqueHago p {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.3em;
+    color: #6E6E6E;
+}

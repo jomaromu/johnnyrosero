@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Solway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Solway&display=swap');
+#jumboAbout h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #6699FF;
+}
+
+#jumboAbout h3 {
+    font-family: 'Solway', serif;
+    color: #6699FF;
+}
+
+#jumboAbout {
+    font-family: 'Solway', serif;
+    color: #6699FF;
+    background-image: url('/assets/81744.jpg');
+    height: 500px;
+}
+
+#titulo {
+    height: 400px;
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+.bordeRojo {
+    border: 1px solid red;
+}

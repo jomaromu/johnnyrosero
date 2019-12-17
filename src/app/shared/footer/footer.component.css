@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+footer {
+    color: #D8D8D8;
+    font-size: 1.2em;
+}
+
+footer :first-child {
+    font-size: 1.3em;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Caveat', cursive;
+}
+
+footer ul li:hover {
+    color: #CC99FF;
+}
+
+footer p {
+    font-size: 0.9em;
+    font-family: 'Kalam', cursive;
+}
+
+@media (max-width: 576px) {
+    footer ul li {
+        font-size: 0.9em;
+    }
+}

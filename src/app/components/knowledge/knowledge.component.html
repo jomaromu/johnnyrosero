@@ -1,0 +1,228 @@
+<app-navbar></app-navbar>
+<!-- jumbotron 1 -->
+<div class="jumbotron jumbotron-fluid" id="jumboAbout">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="titulo">
+                    <h2 class="display-4 text-center animated bounce">Las tecnologías con las que le puedo ayudar</h2>
+                    <h3 class="text-center animated pulse delay-1s">Mis conocimientos</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- conocimientos -->
+<div class="container-fluid p-5">
+    <div class="row align-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">Angular</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/angular.png" class="card-img-top" alt="Angular" style="width: 50px; float:inline-end;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block;">
+                        <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">Node</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/node.png" class="card-img-top" alt="Node" style="width: 50px; float:inline-end;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block;">
+                        <canvas baseChart [data]="doughnutChartDataNode" [labels]="doughnutChartLabelsNode" [chartType]="doughnutChartTypeNode">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">JavaScript</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/js.png" class="card-img-top" alt="JavaScript" style="width: 50px; float:inline-end;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block;">
+                        <canvas baseChart [data]="doughnutChartDataJS" [labels]="doughnutChartLabelsJS" [chartType]="doughnutChartTypeJS">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-5">
+    <div class="row align-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">Mongo DB</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/mongodb.png" class="card-img-top" alt="Mongo DB" style="width: 50px; float:inline-end;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block;">
+                        <canvas baseChart [data]="doughnutChartDataMg" [labels]="doughnutChartLabelsMg" [chartType]="doughnutChartTypeMg">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">Flutter/Dart</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/flutterdart.png" class="card-img-top" alt="Flutter/Dart" style="width: 200px; float:inline-end;">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block;">
+                        <canvas baseChart [data]="doughnutChartDataFlutter" [labels]="doughnutChartLabelsFlutter" [chartType]="doughnutChartTypeFlutter">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">Ionic</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/ionic.png" class="card-img-top" alt="Ionic" style=" width: 50px; float:inline-end; ">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block; ">
+                        <canvas baseChart [data]="doughnutChartDataIonic " [labels]="doughnutChartLabelsIonic " [chartType]="doughnutChartTypeIonic ">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-5 ">
+    <div class="row align-content-center ">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2 ">
+                <div class="card-body ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">Java</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/java.png" class="card-img-top" alt="Java" style=" width: 60px; float:inline-end; ">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block; ">
+                        <canvas baseChart [data]="doughnutChartDataJava " [labels]="doughnutChartLabelsJava " [chartType]="doughnutChartTypeJava ">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2 ">
+                <div class="card-body ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title titulos-lenguajes">C++</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/c.png" class="card-img-top" alt="C plus plus" style=" width: 50px; float:inline-end; ">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block; ">
+                        <canvas baseChart [data]="doughnutChartDataC " [labels]="doughnutChartLabelsC " [chartType]="doughnutChartTypeC ">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card p-2 ">
+                <div class="card-body ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+                                <h5 class="card-title">MySql</h5>
+                                <h6 class="card-subtitle mb-2 text-muted progreso">Progreso...</h6>
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/mysql.png" class="card-img-top" alt="Mysql" style=" width: 50px; float:inline-end; ">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="display: block; ">
+                        <canvas baseChart [data]="doughnutChartDataMysql " [labels]="doughnutChartLabelsMysql " [chartType]="doughnutChartTypeMysql ">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-whatidoit></app-whatidoit>
+<app-footer></app-footer>

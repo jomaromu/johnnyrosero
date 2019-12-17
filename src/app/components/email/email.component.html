@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+<!-- jumbotron 1 -->
+<div class="jumbotron jumbotron-fluid" id="jumboAbout">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="titulo">
+                    <h2 class="display-4 text-center animated bounce">¿Tiene una consulta?</h2>
+                    <h3 class="text-center animated pulse delay-1s">Escribame</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- formuario -->
+<div class="container">
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12">
+            <form [formGroup]="forma" (ngSubmit)="enviarMensaje($event, forma)" class="p-5 animated fadeIn" novalidate>
+                <!-- nombre -->
+                <div class="form-group">
+                    <ul *ngIf="banderaNombre === true" class="list-group">
+                        <li *ngIf="banderaNombreEspacio === true" class="list-group-item list-group-item-warning">Nombre no debe contener espacios</li>
+                        <li *ngIf="banderaNombreMin3 === true" class="list-group-item list-group-item-warning">Mínimo 3 carácteres</li>
+                        <li *ngIf="banderaNombreMin15 === true" class="list-group-item list-group-item-warning">Máximo 15 carácteres</li>
+                    </ul>
+                    <label for="nombre">Nombre</label>
+                    <input (keyup)="verificaNombre($event, forma)" type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Primer nombre">
+                    <small id="nombre" class="form-text text-muted">Es importante que sepa quien me escribe</small>
+                </div>
+
+                <!-- correo -->
+                <div class="form-group">
+                    <ul *ngIf="banderaCorreo === true" class="list-group">
+                        <li class="list-group-item list-group-item-warning">Este parece no ser un correo válido</li>
+                    </ul>
+                    <label for="correo">Correo Electrónico</label>
+                    <input (keyup)="verificaCorreo($event, forma)" type="email" class="form-control" id="correo" formControlName="correo" placeholder="Correo Electrónico">
+                    <small id="email" class="form-text text-muted">Aquí podré escribirte si fuese necesario</small>
+                </div>
+
+                <!-- celular -->
+                <div class="form-group">
+                    <ul *ngIf="banderaCelular === true" class="list-group">
+                        <li *ngIf="banderaCelPermitidos === true" class="list-group-item list-group-item-warning">Sólo son permitidos números</li>
+                        <li *ngIf="banderaCelMin7 === true" class="list-group-item list-group-item-warning">Mínimo 7 números</li>
+                        <li *ngIf="banderaCelMax20 === true" class="list-group-item list-group-item-warning">Máximo 20 números</li>
+                        <li *ngIf="checkNumero === true" class="list-group-item list-group-item-warning">Sólo números</li>
+                        <li *ngIf="banderaCelEspacios === true" class="list-group-item list-group-item-warning">No debe contener espacios</li>
+                    </ul>
+                    <label for="celular">Teléfono</label>
+                    <input (keyup)="verificaCelular($event, forma)" type="text" class="form-control" name="celular" id="celular" formControlName="celular" placeholder="Fijo o Celular">
+                    <small id="celular" class="form-text text-muted">Es neceario, para tener un acercamiento más eficáz</small>
+                </div>
+
+                <!-- textarea -->
+                <div class="form-group">
+                    <ul *ngIf="banderaMensaje === true" class="list-group">
+                        <li *ngIf="banderaMenMin10 === true" class="list-group-item list-group-item-warning">Mínimo 4 carácteres al inicio</li>
+                        <li *ngIf="banderaMenMax300 === true" class="list-group-item list-group-item-warning">Máximo 300 carácteres</li>
+                        <li *ngIf="banderaEspacio === true" class="list-group-item list-group-item-warning">No debe empezar con espacio</li>
+                    </ul>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea (keyup)="verificaMensaje($event, forma)" class="form-control" name="mensaje" id="mensaje" formControlName="mensaje" placeholder="Escriba su consulta aquí..."></textarea>
+                    <small id="mensaje" class="form-text text-muted">Dígame si inquitúd<span> | Ha escrito: {{contadorMensaje}} carácteres</span></small>
+                </div>
+
+                <button type="submit" class="btn btn-outline-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>''

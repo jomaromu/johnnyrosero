@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Solway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Solway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+#jumboAbout h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #6699FF;
+}
+
+#jumboAbout h3 {
+    font-family: 'Solway', serif;
+    color: #6699FF;
+}
+
+#jumboAbout {
+    font-family: 'Solway', serif;
+    color: #6699FF;
+    background-image: url('/assets/81744.jpg');
+    height: 500px;
+}
+
+#titulo {
+    height: 400px;
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+#imgInteres {
+    border: 8px solid #6699FF;
+    ;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+
+#interesCard h5 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #424242;
+}
+
+#interesCard p {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.3em;
+    color: #6E6E6E;
+}
+
+#interesCard {
+    border: none
+}
+
+.loqueHago img {
+    border: 2px solid #FF99FF;
+    border-radius: 8px;
+}
+
+.loqueHago img {
+    border-radius: 8px;
+}
+
+#jumboLoQueHago {
+    background-color: #FFFFFF;
+}
+
+#jumboLoQueHago .card {
+    border: none;
+}
+
+.textLoqueHago h5 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #424242;
+}
+
+.textLoqueHago p {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.3em;
+    color: #6E6E6E;
+}

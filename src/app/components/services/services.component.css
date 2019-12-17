@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Solway&display=swap');
+#jumboAbout h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #6699FF;
+}
+
+#jumboAbout h3 {
+    font-family: 'Solway', serif;
+    color: #6699FF;
+}
+
+#jumboAbout {
+    font-family: 'Solway', serif;
+    color: #6699FF;
+    background-image: url('/assets/81744.jpg');
+    height: 500px;
+    /* border: 1px solid red; */
+}
+
+#titulo {
+    height: 400px;
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid red; */
+}
+
+.imgInteres {
+    border: none;
+    width: 100%;
+}
+
+.interesCard h5 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #424242;
+}
+
+.interesCard p {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 1.3em;
+    color: #6E6E6E;
+}
+
+.interesCard {
+    border: none
+}
+
+#jumboTarjeta2,
+#interesCard2 {
+    background-color: #FF6666;
+}
+
+#jumboTarjeta2 #imgInteres2 {
+    border-radius: 8px;
+    box-shadow: 5px 5px 2px solid gray;
+}
+
+#jumboTarjeta2 .textos {
+    color: #E6E6E6;
+}
+
+#jumboTarjeta2 h5 {
+    color: #FFFFFF !important;
+}
+
+
+/* tarjeta 3 */
+
+#jumboTarjeta3,
+#interesCard3 {
+    background-color: #6666CC;
+}
+
+#jumboTarjeta3 #imgInteres3 {
+    border-radius: 8px;
+    box-shadow: 5px 5px 3px solid gray;
+}
+
+#jumboTarjeta3 .textos {
+    color: #E6E6E6;
+}
+
+#jumboTarjeta3 h5 {
+    color: #FFFFFF !important;
+}

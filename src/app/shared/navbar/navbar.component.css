@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Lobster&display=swap');
+#navbar {
+    display: flex;
+}
+
+#navbar #navbarSupportedContent {
+    /* border: 1px solid red; */
+    justify-content: flex-end;
+    float: right;
+    padding: 10px;
+}
+
+#navbar #navbarSupportedContent li {
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+#navNombre {
+    font-family: 'Courgette', cursive;
+    font-size: 1.8em;
+}
